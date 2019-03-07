@@ -68,8 +68,5 @@ extension ViewController: UISearchBarDelegate {
         }
 
         task.resume()
-
-
     }
 }
-

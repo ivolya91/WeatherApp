@@ -41,7 +41,7 @@ extension ViewController: UISearchBarDelegate {
                     errorHasOccured = true
                 }
                 if let location = json["location"]  {
-                    locationName = location["name"] as? String
+                    locationName = location["name"] as? String    // присваивает имя из json
                 }
                 if let current = json["current"]  {
                     temperature = current["temp_c"] as? Double

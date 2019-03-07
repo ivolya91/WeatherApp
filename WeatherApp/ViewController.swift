@@ -50,13 +50,13 @@ extension ViewController: UISearchBarDelegate {
                 DispatchQueue.main.async {
                     
                     if errorHasOccured {
-                        self?.cityLabel.text = "Error Olya"
-                        self?.temperatureLabel.isHidden = true
+                        self?.cityLabel.text = "Error has occured"
+                        self?.temperatureLabel.isHidden = true   //скрываем температуру
                     }
                     else {
                         self?.cityLabel.text = locationName
                         self?.temperatureLabel.text = "\(temperature!)"
-                        self?.temperatureLabel.isHidden = false
+                        self?.temperatureLabel.isHidden = false   //показываем температуру
                     }
                 }
             
